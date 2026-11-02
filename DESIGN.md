@@ -1,7 +1,10 @@
 # Design
 
-Due at the start of project week. Five things, and requirement 6 asks you to name
-your three design strategies here.
+Due at the start of project week.
+
+Fill in all five sections below. Together they are everything the brief asks
+this document to carry, and section 4 is where requirement 6 expects each of
+your three design strategies named with the class that implements it.
 
 Write it so that another developer could build your system from it without
 asking you a single question.
