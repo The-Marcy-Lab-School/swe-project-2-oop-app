@@ -1,8 +1,9 @@
 # Share-out notes
 
-Five minutes, on 12/16. **This file is not graded** — it is scratch
-paper for the five steps in `PROJECT.md`, so you are not inventing them on the
-day. Every step except the demo should already be written in `DESIGN.md`.
+Five minutes, on 12/16. **This file is scratch paper and is not graded. Your
+share-out is.** It is worth 2 points, so use this to work out the five steps in
+`PROJECT.md` rather than inventing them on the day. Every step except the demo
+should already be written in `DESIGN.md`.
 
 ## 1. The stakeholder's problem
 
