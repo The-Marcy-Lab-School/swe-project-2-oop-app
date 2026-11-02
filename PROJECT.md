@@ -1,24 +1,23 @@
-# Project: Object-Oriented System
+# Project 2: Build an Object-Oriented System
 
 **Table of Contents**
 
-- [Overview](#overview)
-  - [AI Use on This Project](#ai-use-on-this-project)
-  - [Choose Your Path](#choose-your-path)
-  - [What Both Paths Must Have](#what-both-paths-must-have)
-  - [Above and Beyond](#above-and-beyond)
-  - [Deliverables](#deliverables)
-- [Getting Started](#getting-started)
-  - [Setup Instructions](#setup-instructions)
-  - [Git Workflow](#git-workflow)
+- [What You Are Building](#what-you-are-building)
+- [AI Use on This Project](#ai-use-on-this-project)
+- [Choose Your Path](#choose-your-path)
+- [What Both Paths Must Have](#what-both-paths-must-have)
+- [Above and Beyond](#above-and-beyond)
+- [Deliverables](#deliverables)
+- [Setup](#setup)
+- [Git Workflow](#git-workflow)
 - [Path A: Borough Food Rescue](#path-a-borough-food-rescue)
 - [Path B: The Library of Things](#path-b-the-library-of-things)
 - [Project Grading](#project-grading)
 - [Tips / Common Mistakes to Avoid](#tips--common-mistakes-to-avoid)
 - [Stuck Getting Started?](#stuck-getting-started)
-- [How to Submit](#how-to-submit)
+- [Submitting](#submitting)
 
-## Overview
+## What You Are Building
 
 A stakeholder has a problem, and they have come to you to solve it with software.
 
@@ -35,7 +34,7 @@ will be to find what the model got wrong. A design document that is vague
 produces generated code you cannot judge, so the clarity you put in now is what
 makes that exercise possible later.
 
-### AI Use on This Project
+## AI Use on This Project
 
 **Tutor mode is the mode for this project.** You write every line you submit.
 Quarter 1 is the quarter where code is written by hand, and this is the last
@@ -63,7 +62,7 @@ to a model and judge what it builds.
 
 You own every line either way, and you will be asked to explain it.
 
-### Choose Your Path
+## Choose Your Path
 
 Choose **one** of two stakeholders. Both require the same work and are graded by
 the same rubric, so pick the problem you would rather spend three weeks inside.
@@ -77,7 +76,7 @@ losing track of them.
 Read [What Both Paths Must Have](#what-both-paths-must-have) first. Then read
 your path's section and ignore the other one.
 
-### What Both Paths Must Have
+## What Both Paths Must Have
 
 Your rubric checks these nine things. Every number below is countable, so you
 can check your own work before you submit it. The *names* of your classes depend
@@ -173,7 +172,7 @@ worth a test.
 Your data lives in memory while the program runs. **You are not asked to save
 anything to a file**, so do not build a save system.
 
-### Above and Beyond
+## Above and Beyond
 
 Not graded, not required. This is where to go once your required work runs.
 
@@ -192,7 +191,7 @@ Not graded, not required. This is where to go once your required work runs.
    starts from a system you did not have to build by hand.
 6. **Persistence.** Save to JSON on exit and load on start.
 
-### Deliverables
+## Deliverables
 
 **1. `DESIGN.md`, due at the start of project week.** Five things:
 
@@ -248,9 +247,7 @@ Every step except the live demo should already be written in `DESIGN.md`. You ar
 preparing new material; you are saying out loud what you already decided, which
 is also what the module assessment asks you to do.
 
-## Getting Started
-
-### Setup Instructions
+## Setup
 
 Work in `development/mod-2`.
 
@@ -277,7 +274,7 @@ Work in `development/mod-2`.
 7. Add, commit, and push all files with the message `"initializing project"`.
 8. Make a draft branch before you start: `git checkout -b draft`.
 
-### Git Workflow
+## Git Workflow
 
 Your `main` branch holds the most recent **working** version of your
 application. Build on a branch and merge when the feature runs.
@@ -537,7 +534,7 @@ methods from Day 2.
 `pytest` one more time, and reread every message your program prints for
 spelling. Then run your five steps out loud once, with a timer.
 
-## How to Submit
+## Submitting
 
 ```sh
 git add -A
