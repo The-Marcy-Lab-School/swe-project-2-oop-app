@@ -1,6 +1,6 @@
 # Share-out notes
 
-Five minutes, on 12/16. **This file is not graded as writing** — it is scratch
+Five minutes, on 12/16. **This file is not graded** — it is scratch
 paper for the five steps in `PROJECT.md`, so you are not inventing them on the
 day. Every step except the demo should already be written in `DESIGN.md`.
 
