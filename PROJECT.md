@@ -235,7 +235,7 @@ someone who has never seen it. It is the first thing anyone looks at.
 **4. `REFLECTIONS.md`**, two responses of 150-250 words each. Prompts are in
 [Project Grading](#project-grading).
 
-**5. A five-minute share-out**, presented on 12/16. Five beats, in this order:
+**5. A five-minute share-out**, presented on 12/16. Five steps, in this order:
 
 1. The stakeholder's problem, in your own words, in two sentences.
 2. A walk through your UML diagram, naming what each class owns.
@@ -244,7 +244,7 @@ someone who has never seen it. It is the first thing anyone looks at.
 4. The design decision you struggled with, and how you settled it.
 5. What you would change if you started again.
 
-Every beat except the live demo is already written in `DESIGN.md`. You are not
+Every step except the live demo should already be written in `DESIGN.md`. You are not
 preparing new material; you are saying out loud what you already decided, which
 is also what the module assessment asks you to do.
 
@@ -468,7 +468,7 @@ In `REFLECTIONS.md`, respond to both prompts in 150-250 words each.
 
 In the share-out on 12/16:
 
-3. All five beats are covered in five minutes, and the refusal is demonstrated
+3. All five steps are covered in five minutes, and the refusal is demonstrated
    live rather than described.
 4. Every class named in the walkthrough matches a class in the code, and every
    question about why a decision was made gets an answer.
@@ -535,7 +535,7 @@ methods from Day 2.
 **Day 5 — polish and rehearse.** The project is due at the end of today. Make
 `DESIGN.md` match the code you actually wrote, write `REFLECTIONS.md`, run
 `pytest` one more time, and reread every message your program prints for
-spelling. Then run your five beats out loud once, with a timer.
+spelling. Then run your five steps out loud once, with a timer.
 
 ## How to Submit
 
@@ -550,5 +550,5 @@ git push
 3. Confirm `DESIGN.md`, `REFLECTIONS.md`, and `README.md` are all present and
    polished.
 4. Open a pull request to your instructor for feedback.
-5. Bring your five beats to the share-out on 12/16, ready to demonstrate a
+5. Bring your five steps to the share-out on 12/16, ready to demonstrate a
    refusal live.
