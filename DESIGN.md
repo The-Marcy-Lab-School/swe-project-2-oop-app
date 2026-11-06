@@ -12,7 +12,7 @@ asking you a single question.
 ## 1. UML class diagram
 
 Draw it by hand and photograph it, or write it as text. Mark every attribute `+`
-public or `-` private.
+public or `-` non-public (one whose name begins with `_`).
 
 [Your diagram, or a link to the image, here]
 
