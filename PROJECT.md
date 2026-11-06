@@ -184,8 +184,8 @@ Not graded, not required. This is where to go once your required work runs.
    building the version you argued for.
 3. **A second higher-order function**, in the form you did not use for
    requirement 7.
-4. **Class-level ID generation.** A class attribute plus a `@classmethod` that
-   hands out the next unique ID, so no two records can collide.
+4. **Issue each ID from the coordinator.** The coordinator stores the next ID
+   and hands it to each new record it creates, so no two records can collide.
 5. **More tests than requirement 9 asks for.** Cover every status transition,
    including the ones that are supposed to fail, and use a fixture so each test
    starts from a system you did not have to build by hand.
