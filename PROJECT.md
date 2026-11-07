@@ -28,7 +28,7 @@ getting the code to run. The hard part is deciding which object is responsible
 for what, and that decision is what this project assesses.
 
 Keep this application in a good state as you go, because you will see it again.
-In December you will hand your design document to an AI model, ask it to build
+In January, when Mod 3 starts, you will hand your design document to an AI model, ask it to build
 a new feature for the system you are about to write by hand, and your job then
 will be to find what the model got wrong. A design document that is vague
 produces generated code you cannot judge, so the clarity you put in now is what
@@ -57,7 +57,7 @@ of a chat and it will hold for the rest of the conversation:
 > Do not write the final function, algorithm, or code implementation.
 
 There is a further rule for `DESIGN.md`, in [Deliverables](#deliverables): you
-have to be able to defend every line of it, because in December you will hand it
+have to be able to defend every line of it, because in January you will hand it
 to a model and judge what it builds.
 
 You own every line either way, and you will be asked to explain it.
@@ -216,7 +216,7 @@ asking you a single question.
 encouraged to use it. Ask a model to find a relationship your diagram is
 missing, to tell you which responsibility is ambiguous, or to argue the other
 side of your design decision. Do not ask it to produce the diagram. You have to
-be able to defend every line, because in December you will hand this document to
+be able to defend every line, because in January you will hand this document to
 a model, ask it to build a new feature from it, and find what it got wrong. A
 document you did not reason through gives you nothing to judge the output
 against.
@@ -487,7 +487,7 @@ In the share-out on 12/16:
 | Storing relationship data on an entity | A loan's due date belongs to the loan, not to the item and not to the member. That is what the intermediary object is for. |
 | Making every attribute public | Ask of each one: would the system break if this held a wrong value? If yes, protect it. |
 | Subclasses that differ only by a string | A subclass earns its place by behaving differently. If every method is identical, you wanted an attribute. |
-| Asking AI to draw your UML | Ask it to find what your diagram is missing. You cannot defend a design you did not reason through, and in December you will have to. |
+| Asking AI to draw your UML | Ask it to find what your diagram is missing. You cannot defend a design you did not reason through, and in January you will have to. |
 | `if isinstance(...)` branching on subtype | Move the differing behavior into the subclasses and call the method. That is polymorphism doing the work. |
 | Letting any object change another's status | Status changes go through a method on the object that owns the status, so the rules run every time. |
 | Building all five features, then testing | Build one feature, run it, commit, move on. |
