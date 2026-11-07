@@ -95,7 +95,7 @@ Every class you define has **at least 3 attributes**, **at least 2 methods**, an
 a `__repr__` that returns something you would want to see in a traceback.
 
 **2. Encapsulation.** **At least 3 attributes** across your system are
-`_protected` and reached through a `@property`. **At least 1 setter refuses an
+non-public and reached through a `@property`. **At least 1 setter refuses an
 invalid value** and tells the user why, instead of storing it.
 
 Ask of each attribute: would your system break if this held a wrong value? A
@@ -196,7 +196,8 @@ Not graded, not required. This is where to go once your required work runs.
 **1. `DESIGN.md`, due at the start of project week.** Five things:
 
 1. A **UML class diagram**. Draw it by hand and photograph it, or write it as
-   text. Mark every attribute `+` public or `-` private.
+   text. Mark every attribute `+` public or `-` non-public (one whose name
+   begins with `_`).
 2. **One line per class**: what data it owns, and what it can do.
 3. **One line per relationship**: which class knows about which, whether that is
    one-way or bidirectional, and why.
@@ -401,7 +402,7 @@ the feature works, so run each one before you submit.
 1. At least 5 classes are defined, each with at least 3 attributes and at least 2
    methods, covering coordinator, superclass, 2 subclasses, and intermediary.
 2. Every class returns a useful string from `__repr__`.
-3. At least 3 attributes are `_protected` and reached through a `@property`.
+3. At least 3 attributes are non-public and reached through a `@property`.
 4. At least 1 `@property` setter refuses an invalid value and says why.
 5. Every subclass calls `super().__init__()`.
 6. At least 1 method is overridden and returns a different result per subclass.
@@ -427,8 +428,8 @@ the feature works, so run each one before you submit.
 ### System Design (3 points)
 
 1. `DESIGN.md` contains a UML class diagram that marks every attribute public or
-   private, every class in the diagram exists in the code, and each class has a
-   line saying what data it owns and what it can do.
+   non-public, every class in the diagram exists in the code, and each class has
+   a line saying what data it owns and what it can do.
 2. Every relationship is listed with a direction and a reason.
 3. One design decision is written up with the options considered and the
    reasoning that settled it.
@@ -507,8 +508,8 @@ superclass and its two subclasses, give them the one method each subclass answer
 differently, and loop over a mixed list calling it. By the end of today, objects
 exist and print.
 
-**Day 2 — protect the data, then connect it.** Turn the attributes that have
-wrong values into `_protected` with a `@property`, and make one setter raise
+**Day 2 — protect the data, then connect it.** Make the attributes that could
+hold wrong values non-public with a `@property`, and make one setter raise
 `ValueError`. **Write your first test now**, while the setter is fresh: one
 `pytest.raises(ValueError)`. Then write the intermediary — the class that
 connects two entities, holding a `_status` and the methods that move it from one
