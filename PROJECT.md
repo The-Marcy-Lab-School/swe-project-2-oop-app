@@ -94,9 +94,10 @@ on your path. The structures and the counts do not.
 Every class you define has **at least 3 attributes**, **at least 2 methods**, and
 a `__repr__` that returns something you would want to see in a traceback.
 
-**2. Encapsulation.** **At least 3 attributes** across your system are
-non-public and reached through a `@property`. **At least 1 setter refuses an
-invalid value** and tells the user why, instead of storing it.
+**2. Encapsulation.** **At least 3 attributes that have a rule** across your
+system are non-public and guarded by a `@property`. A read-only property counts.
+**At least 1 setter refuses an invalid value** and tells the user why, instead
+of storing it.
 
 Ask of each attribute: would your system break if this held a wrong value? A
 fridge's capacity or a member's borrowing limit cannot go negative, and a loan's
@@ -404,7 +405,8 @@ the feature works, so run each one before you submit.
 1. At least 5 classes are defined, each with at least 3 attributes and at least 2
    methods, covering coordinator, superclass, 2 subclasses, and intermediary.
 2. Every class returns a useful string from `__repr__`.
-3. At least 3 attributes are non-public and reached through a `@property`.
+3. At least 3 attributes that have a rule are non-public and guarded by a
+   `@property`. A read-only property counts.
 4. At least 1 `@property` setter refuses an invalid value and says why.
 5. Every subclass calls `super().__init__()`.
 6. At least 1 method is overridden and returns a different result per subclass.
