@@ -28,9 +28,9 @@ getting the code to run. The hard part is deciding which object is responsible
 for what, and that decision is what this project assesses.
 
 Keep this application in a good state as you go, because you will see it again.
-In January, when Mod 3 starts, you will hand your design document to an AI model, ask it to build
-a new feature for the system you are about to write by hand, and your job then
-will be to find what the model got wrong. A design document that is vague
+When Mod 3 starts, you will hand your design document to an AI model, ask it to
+build a new feature for the system you are about to write by hand, and your job
+then will be to find what the model got wrong. A design document that is vague
 produces generated code you cannot judge, so the clarity you put in now is what
 makes that exercise possible later.
 
@@ -57,7 +57,7 @@ of a chat and it will hold for the rest of the conversation:
 > Do not write the final function, algorithm, or code implementation.
 
 There is a further rule for `DESIGN.md`, in [Deliverables](#deliverables): you
-have to be able to defend every line of it, because in January you will hand it
+have to be able to defend every line of it, because in Mod 3 you will hand it
 to a model and judge what it builds.
 
 You own every line either way, and you will be asked to explain it.
@@ -217,7 +217,7 @@ asking you a single question.
 encouraged to use it. Ask a model to find a relationship your diagram is
 missing, to tell you which responsibility is ambiguous, or to argue the other
 side of your design decision. Do not ask it to produce the diagram. You have to
-be able to defend every line, because in January you will hand this document to
+be able to defend every line, because in Mod 3 you will hand this document to
 a model, ask it to build a new feature from it, and find what it got wrong. A
 document you did not reason through gives you nothing to judge the output
 against.
@@ -235,7 +235,8 @@ someone who has never seen it. It is the first thing anyone looks at.
 **4. `REFLECTIONS.md`**, two responses of 150-250 words each. Prompts are in
 [Project Grading](#project-grading).
 
-**5. A five-minute share-out**, presented on 12/16. Five steps, in this order:
+**5. A five-minute share-out**, presented on the share-out day. Five steps, in
+this order:
 
 1. The stakeholder's problem, in your own words, in two sentences.
 2. A walk through your UML diagram, naming what each class owns.
@@ -309,12 +310,16 @@ design work.
 
 **Required features**
 
-1. **Register a donor site and a fridge location.** A fridge has a capacity and a delivery time, the number of days a delivery takes to reach it, and the system knows how full it is right now.
+1. **Register a donor site and a fridge location.** A fridge has a capacity and
+   a delivery time, the number of days a delivery takes to reach it, and the
+   system knows how full it is right now.
 2. **Add a food item to the system**, from a donor site. Perishable and
    shelf-stable items both answer "how many days until you expire?" — and they
    answer it differently.
 3. **Claim an item for a fridge.** This creates a delivery. The system **refuses**
-   the claim when the fridge has no room, and when a perishable item would expire before it could be delivered: when the item has fewer days until it expires than the fridge's delivery time.
+   the claim when the fridge has no room, and when a perishable item would
+   expire before it could be delivered: when the item has fewer days until it
+   expires than the fridge's delivery time.
 4. **Move a delivery through its states**: claimed, in transit, delivered. A
    delivery that has already been delivered cannot be delivered again, and
    attempting it gets a clear message rather than a second delivery.
@@ -462,7 +467,7 @@ In `REFLECTIONS.md`, respond to both prompts in 150-250 words each.
 2. Explain one Mod 2 concept you understand more deeply after building this, in
    plain terms, and point to the place in your code where it earns its keep.
 
-In the share-out on 12/16:
+In the share-out:
 
 3. All five steps are covered in five minutes, and the refusal is demonstrated
    live rather than described.
@@ -488,7 +493,7 @@ In the share-out on 12/16:
 | Storing relationship data on an entity | A loan's due date belongs to the loan, not to the item and not to the member. That is what the intermediary object is for. |
 | Making every attribute public | Ask of each one: would the system break if this held a wrong value? If yes, protect it. |
 | Subclasses that differ only by a string | A subclass earns its place by behaving differently. If every method is identical, you wanted an attribute. |
-| Asking AI to draw your UML | Ask it to find what your diagram is missing. You cannot defend a design you did not reason through, and in January you will have to. |
+| Asking AI to draw your UML | Ask it to find what your diagram is missing. You cannot defend a design you did not reason through, and in Mod 3 you will have to. |
 | `if isinstance(...)` branching on subtype | Move the differing behavior into the subclasses and call the method. That is polymorphism doing the work. |
 | Letting any object change another's status | Status changes go through a method on the object that owns the status, so the rules run every time. |
 | Building all five features, then testing | Build one feature, run it, commit, move on. |
@@ -546,5 +551,4 @@ git push
 3. Confirm `DESIGN.md`, `REFLECTIONS.md`, and `README.md` are all present and
    polished.
 4. Open a pull request to your instructor for feedback.
-5. Bring your five steps to the share-out on 12/16, ready to demonstrate a
-   refusal live.
+5. Bring your five steps to the share-out, ready to demonstrate a refusal live.
