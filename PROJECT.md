@@ -136,8 +136,7 @@ to be named in `DESIGN.md` with the class that implements it.
 
 **7. A higher-order function.** Write **at least 1**, in either form:
 
-- a **decorator** you wrote, wrapping a method that changes state — a
-  `@requires_status` guard is the natural one here, or
+- a **decorator** you wrote, wrapping a method that changes state — a guard named for the status the method needs, such as `@requires_in_transit` or `@requires_checked_out`, is the natural one here, or
 - a **method that takes a function as a parameter** and uses it to filter or
   sort a collection.
 
@@ -190,6 +189,7 @@ Not graded, not required. This is where to go once your required work runs.
    including the ones that are supposed to fail, and use a fixture so each test
    starts from a system you did not have to build by hand.
 6. **Persistence.** Save to JSON on exit and load on start.
+7. **A decorator factory.** If you wrote one guard per status, replace them with a single `@requires_status("...")` that takes the status as an argument, so one function guards every transition. Put your guards side by side first: the one word that differs between them is the argument the factory takes.
 
 ## Deliverables
 
