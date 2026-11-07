@@ -308,14 +308,12 @@ design work.
 
 **Required features**
 
-1. **Register a donor site and a fridge location.** A fridge has a capacity, and
-   the system knows how full it is right now.
+1. **Register a donor site and a fridge location.** A fridge has a capacity and a delivery time, the number of days a delivery takes to reach it, and the system knows how full it is right now.
 2. **Add a food item to the system**, from a donor site. Perishable and
    shelf-stable items both answer "how many days until you expire?" — and they
    answer it differently.
 3. **Claim an item for a fridge.** This creates a delivery. The system **refuses**
-   the claim when the fridge has no room, and when a perishable item would expire
-   before it could be delivered.
+   the claim when the fridge has no room, and when a perishable item would expire before it could be delivered: when the item has fewer days until it expires than the fridge's delivery time.
 4. **Move a delivery through its states**: claimed, in transit, delivered. A
    delivery that has already been delivered cannot be delivered again, and
    attempting it gets a clear message rather than a second delivery.
